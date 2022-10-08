@@ -8,7 +8,6 @@ if __name__ == "__main__":
     items.extend([10,11,12])
     print(items[:])
 
-
     for i in range(len(items)):
         print(i, items[i])
 
