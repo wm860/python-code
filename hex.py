@@ -27,7 +27,18 @@ def hex2dec(x):
     for i, digit in enumerate(x):
         result += int(dictn.get(digit,digit)) * 16 ** (len(x) - 1 - i)
     return result
-
+def hex2dec2(x):
+    dictn = {
+        "A": 10,
+        "B": 11,
+        "C": 12,
+        "D": 13,
+        "E": 14,
+        "F": 15,
+    }
+    return sum([
+        int (dictn.get(val, val)) * 16** pos for pos, val in enumerate(reversed(x)) if bit != "0"
+    ])
 
 if __name__ == "__main__":
     print(hex2dec("ABC"))

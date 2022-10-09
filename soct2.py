@@ -13,6 +13,12 @@ def oct2dec(x):
         result += int(digit) * 8 ** (len(x) - 1 - i)
     return result
 
+def oct2dec2(x):
+    return sum([
+        int (val) * 8** pos for pos, val in enumerate(reversed(x)) if bit != "0"
+    ])
+
+
 if __name__ == "__main__":
     x = 42
     result = dec2oct(x)

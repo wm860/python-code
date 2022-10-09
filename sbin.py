@@ -18,6 +18,10 @@ def bin2dec(x):
         liczba += int(x[i]) * 2**(len(x)-1-i)
     return liczba
 
+def bin2dec2(x):
+    return sum(
+        2** pos for pos, bit in enumerate(reversed(x)) if bit == "1"
+    )
 
 if __name__ == "__main__":
     #print (as_bin(14))
