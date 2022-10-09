@@ -33,4 +33,13 @@ if __name__ == "__main__":
 
     phones.pop("will")
 
+    pho = {
+        "Bob Marley": "11-22-33",
+        "Another Guy": "44 - 55 - 11",
+        "Justin": "9089"
+    }
+    pho_inv = { # to da nam przypisanie wartości i do klucza i klucza do wartosc
+        value: key for key, value in pho.items()
+    }
+
 
