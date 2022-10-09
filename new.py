@@ -1,12 +1,13 @@
 def is_prime(n):
-    i=2
     if n == 1:
         return False
-    for _ in range (n-2):
+    for i in range(2, n):
         if n%i == 0:
             return False
-        i += 1
     return True
 
 if __name__ == "__main__":
-    print(is_prime(20))
+    primes = [
+        x for x in range(200) if is_prime(x)
+    ]
+    print(primes)
