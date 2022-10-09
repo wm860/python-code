@@ -1,17 +1,13 @@
 def fi(n):
-    i = 3
-    result = []
-    result[0]=1
-    if n ==1:
-        return 1
-    elif n==2:
-        return 2
-    else:
-        while i<n:
-            result[i] = result[i-1] + result[i-2]
-            i +=1
-        return result[n-1]
-
+    cache = {
+        0: 0,
+        1: 1
+    }
+    def _fib(n):
+        if n not in cache:
+            cache[n] = _fib(n-1) + _fib(n-2)
+        return cache[n]
+    return _fib(n)
 
 if __name__ == "__main__":
-    print(fi(n))
+    print(fi(100))
