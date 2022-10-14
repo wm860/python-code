@@ -6,7 +6,7 @@ def is_prime(n):
             return False
     return True
 
-def prime_generator():
+def prime_generator(n):
     for i in range(1,n+1):
         if is_prime(i):
             yield i
