@@ -1,4 +1,4 @@
-from collections import defaultdict
+from collections import Counter
 
 def calc_freq(sentence):
     return Counter(sentence.lower().split())
