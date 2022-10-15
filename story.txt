@@ -1,0 +1,3 @@
+Streszczenie: historyjka użytkownika to nieformalne, ogólne objaśnienie funkcji oprogramowania napisane z perspektywy użytkownika końcowego. Służy wykazaniu, w jaki sposób dana funkcja oprogramowania przyniesie klientowi korzyści.
+Chciałoby się powiedzieć, że historyjki użytkownika są, po prostu, wymaganiami systemowymi oprogramowania. Ale nie są.
+Kluczowym elementem tworzenia oprogramowania w nurcie Agile jest stawianie ludzi na pierwszym miejscu, a historyjka użytkownika pozwala umieścić użytkowników końcowych w samym sercu rozmowy. W takich historyjkach używa się
