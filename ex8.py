@@ -10,6 +10,6 @@ def even2(items):
 
 if __name__ == "__main__":
     result = even1([1, 8, 7, 10, 9, 6, 3])
-    for value in even2([1, 8, 7, 10, 9, 6, 3])
+    for value in even2([1, 8, 7, 10, 9, 6, 3]):  #generator!!!
         print(value)
     print(result)

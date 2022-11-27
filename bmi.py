@@ -13,10 +13,3 @@ if __name__ == "__main__":
     result = calculate_bmi(weight, height)
     print("Your status: " + result)
     print(f"Your status z fstringa: {result}")
-
-
-#else:
-#   if bmi > 20:
-#       result = "overweight"
-#  else:
-#     result = "normal"
